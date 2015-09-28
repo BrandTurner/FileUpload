@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Farm File Upload</title>
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href='css/style.css' rel='stylesheet'
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+    <header class="navbar navbar-inverse navbar-fixed-top"></header>
+
+    <div class="container">
+      <div class='upload-box'>
+        <div class='nav-header'>
+           <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#upload" aria-controls="Upload" role="tab" data-toggle="tab">Upload</a></li>
+            <li role="presentation"><a href="#my_files" aria-controls="my_files" role="tab" data-toggle="tab">My Files</a></li>         
+          </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!-- FILE UPLOAD PANEL -->
+          <div role="tabpanel" class="tab-pane active" id="upload">
+            <h2>Please choose your file(s)</h2>
+            <h4>Yes, files :D</h4>
+            <form id='uploadForm' name='uploadForm' enctype='multipart/form-data'>
+              <ul class='upload-list' id='upload-list'></ul>
+              <div class='select-upload' id='select-upload'>
+                <span type="button" class="btn btn-primary btn-file" id="addFiles">Select Files<input type='file' id='input' name='files[]' multiple/></span>
+                <span type="button" class="btn btn-primary hidden" id="uploadFiles">Upload Files</span>
+              </div>
+              <progress id="progressBar" class='hidden' value="0" max="100" style="width:300px;"></progress>
+              <div id="status"></div>
+              <p id="loaded_n_total"></p>
+              <p>50K Max</p>
+            </form>
+          </div>
+
+          <!-- FILE VIEWER PANEL -->
+          <div role="tabpanel" class="tab-pane" id="my_files">
+            <h2>My Files</h2>
+            <ul class='browse-files' id='browse-files'>  
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>
