@@ -1,0 +1,18 @@
+# Simple FileUpload
+This is a simple File Upload Script that contains code for both the client and server side. It is only compatible with modern browsers(>= IE10) because the FormData Object is heavily used.
+The excellent jQuery File Upload was an inspiration and is preferable due to the fact that it handles legacy browsers.
+
+Here is a [live demo](http://brandturner.com/test). Please, do not upload too many files. Once this script is cloned/installed, it should work right out of the box. If you are having issues, you may need to change the permissions on the upload folder
+
+
+
+## Next Steps
+So there's obviously a ton more that you can do with a file upload utility. Here is a list of my todo's: 
+* Implement Drag and Drop API
+* May be overkill for this project, but integrate into a front-end framework
+* Run Jasmine/PHPUnit Test
+* Sync testing w/ Travis CI
+* restrict certain files based on type
+* resize image uploads
+* allow sorting of file directory
+* Include animations that tween between states
