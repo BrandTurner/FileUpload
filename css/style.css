@@ -34,6 +34,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  min-width:462px;
   min-height:470px;
   -moz-border-radius-topright:5px;
   -moz-border-radius-topleft:5px;
